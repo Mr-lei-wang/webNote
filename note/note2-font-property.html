@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<title>font-property</title>
+	<style>
+		.pclass1 {
+			font-size: 16px;
+			font-weight: bold;
+			color: #14c145;
+		}
+
+		.pclass2 {
+			font-family: Consolas, 微软雅黑;
+			font-style: italic;
+			font-weight: bolder;
+			color: #AAA;
+		}
+		.divclass1 {
+			font-size: 15px;
+			font-family: Consolas;
+			font-style: italic;
+			font-weight: bold;
+			width: 80%;
+			text-align: justify;
+		}
+		.divclass2 {
+			margin-top: 15px;
+			font-size: 15px;
+			font-family: Consolas;
+			font-style: normal;
+			font-weight: lighter;
+			color: #14c145;
+			height: 50px;
+			width: 80%;
+			background-color: azure;
+			line-height: 50px;	/* 不建议用于多行文本 */
+		}
+		.divclass3 {
+			font-size: 16px;
+			font-family: Consolas;
+			font-style: italic;
+			font-weight: bolder;
+			width: 80%;
+			text-indent: 2em;	/* em指的是一个字符的大小 */
+		}
+		.divclass4 {
+			font-family: consolas;
+			font-size: 13px;
+			font-style: normal;
+			font-weight: 600;
+			color: #14c145;
+			letter-spacing: 10px; /* 设置字符间距 */
+		}
+		.divclass5 {
+			font-weight: 500;
+			font-size: 13px;
+			font-family: consolas;
+			font-style: oblique;
+			color: #14c145;
+			word-spacing: 10px;	/* 设置词间距，只对英文单词有效 */
+			text-indent: 2em;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<p class="classTitle">字体属性</p>
+		<ol type="1">
+			<li>font-size</li>
+			<li>font-family</li>
+			<li>font-weight</li>
+			<li>font-style</li>
+			<li>color</li>
+		</ol>
+
+		<p class="pclass1">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium fuga enim facere eius ipsam odio?
+			Provident ab deserunt soluta quas iste nobis explicabo veritatis mollitia aliquam! Expedita, eveniet
+			nostrum.
+		</p>
+
+		<p class="pclass2">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a ex sit error libero repudiandae, reiciendis
+			earum beatae quod soluta reprehenderit. Dignissimos qui ratione ducimus alias unde corrupti eaque sit?
+		</p>
+	</div>
+
+	<hr>
+
+	<div>
+		<ol>
+			<li>text-align</li>
+			<li>line-height</li>
+			<li>text-indent</li>
+			<li>letter-spacing</li>
+		</ol>
+		<div class="divclass1">
+			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sequi molestiae repellat aspernatur, unde
+			soluta
+			repellendus facilis rerum nemo temporibus voluptatum, hic non et, natus delectus quibusdam. Illo, fuga
+			facere.
+		</div>
+		<div class="divclass2">
+			Hello World!
+		</div>
+		<div class="divclass3">
+			就ask两地分居案例ask垃圾地方立法骄傲了就爱看拉升阶段考虑开了房间奥克兰士大
+		</div>
+		<div class="divclass4">
+			就ask两地分居案例Lorem ipsum dolor sit垃圾地方立法骄傲了就爱看拉升阶段考虑开了房间奥克兰士大
+		</div>
+		<div class="divclass5">
+			&emsp;就ask两地分居案例Lorem ipsum dolor sit垃圾地方立法骄傲了就爱看拉升阶段考虑开了房间奥克兰士大
+		</div>
+	</div>
+</body>
+
+</html>

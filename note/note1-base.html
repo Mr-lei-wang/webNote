@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">	<!-- 外部样式 -->
+	<style>
+		/* @import url(css/index.css); */	/* 外部样式 */
+	</style>
+	<title>Note1</title>
+	<style>
+		/* 通配符选择器，一般的情况使用下面的语句，将元素的外边距（margin）和内边距（padding）设置为0px */
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		/* 内部样式 */
+		h1 {
+			color: #6969DD;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<span style="visibility: hidden; height: 0px">
+		<div>
+			<h1>一级标题</h1>
+			<h2>二级标题</h2>
+			<h3>三级标题</h3>
+			<h4>四级标题</h4>
+			<h5>五级标题</h5>
+			<h6>六级标题</h6>
+	
+			<p>what are you 弄啥嘞 <sup>[1]</sup> </p>
+			<p>what are you 弄啥嘞 <sub>[2]</sub> </p>
+	
+			<del>删除线</del>
+			<br>
+			<s>也是删除线</s>
+			<br>
+			<br>
+	
+			<strong>加粗标记</strong>
+			<br>
+			<b>也是加粗标记</b>
+			<br>
+			<br>
+	
+			<em>斜体标记</em>
+			<br>
+			<i>也是斜体标记</i>
+			<br>
+			<br>
+		</div>
+	
+		<div>
+			<hr color="red" width="500px" size="5px" noshade align="left">
+		</div>
+	
+		<div>
+			<p>&lt;hr&gt;</p>
+			<p>&emsp;madefunk</p>
+			<p>&copy;</p>
+			<p>&trade;</p>
+			<p>&reg;</p>
+			<p>&#128512</p>
+		</div>
+	
+		<div>
+			<div>11111</div>
+			<div>22222</div>
+			<p>体育<span style="color:gray">Sports</span></p>
+		</div>
+	
+		<div>
+			<ol type="1" start="3">
+				<li>123123</li>
+				<li>456456</li>
+				<li>789789</li>
+			</ol>
+		</div>
+
+		<div>
+			<ul type="disc">
+				<li>aaaaaa</li>
+				<li>aaaaaa</li>
+				<li>aaaaaa</li>
+			</ul>
+
+			<dl>
+				<dt>我是图片</dt>
+				<dd>我是文字</dd>
+			</dl>
+		</div>
+
+		<div>
+			<img src="../resource/image0.jpg" height="108px" width="192px">
+			<img src="../resource/image0.jpg" alt="Loading" height="216px">
+			<img src="../resource/image0.jpg" title="美女" width="384px">
+		</div>
+
+		<div>
+			<ul type="none">
+				<li>
+					<a href="../practise/learnSkill.html" target="_blank" title="LearnSkill">LearnSkill _blank</a>
+				</li>
+				<li>
+					<a href="../practise/learnSkill.html" target="_parent">LearnSkill _parent</a>
+				</li>
+				<li>
+					<a href="../practise/learnSkill.html" target="_top">LearnSkill &nbsp;_top</a>
+				</li>
+				<li>
+					<a href="../practise/learnSkill.html" target="_self">LearnSkill&nbsp;_self</a>
+				</li>
+				<li>
+					<a href="../practise/learnSkill.html" target="_self">
+						<img src="../resource/image0.jpg" alt="Loading" height="108px" title="链接跳转">
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div>
+			<table border="1" width="50%" height="100px" align="center" bordercolor="red" bgcolor="#7d7dff"
+				cellspacing="0" cellpadding="10">
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</table>
+		</div>
+
+		<div>
+			<table border="1" bgcolor="#7d7dff" width="50%" height="100px" align="center" cellspacing="0">
+				<tr bgcolor="#EC53D7" align="center" valign="top">
+					<td width="100">1</td>
+					<td>2</td>
+				</tr>
+				<tr bgcolor="#232323" align="right" valign="bottom" height="100">
+					<td height="100">3</td>
+					<td align="right" valign="top" bgcolor="purple">4</td>
+				</tr>
+			</table>
+		</div>
+
+		<div>
+			<table border="1" width="50%" height="300px">
+				<tr>
+					<td>1</td>
+					<td rowspan="2" colspan="2">2</td>
+					<!-- <td>3</td> -->
+				</tr>
+				<tr>
+					<td>4</td>
+					<!-- <td>5</td>
+				<td>6</td> -->
+				</tr>
+				<tr>
+					<td colspan="2">7</td>
+					<!-- <td>8</td> -->
+					<td>9</td>
+				</tr>
+			</table>
+		</div>
+
+		<div>
+			<form action="https://www.jd.com" method="post">
+				<table border="1" cellspacing="0" bgcolor="purple" bordercolor="7d7dff" width="50%" height="300px"
+					align="center">
+					<tr>
+						<td width="120px">Member Name</td>
+						<td><input type="text" name="username"></td>
+						<td width="120px">Member Date</td>
+						<td><input type="text" name="date"></td>
+					</tr>
+
+					<tr>
+						<td>Member ID</td>
+						<td colspan="3"><input type="password" name="pw"></td>
+					</tr>
+				</table>
+				<center>
+					<!-- <input type="submit" value="Submit" style="width: 25%"> -->
+					<button type="submit" style="width: 25%;">Submit</button>
+					<!-- <input type="reset" value="Reset" style="width:25%"> -->
+					<button type="reset" style="width: 25%;">Reset</button>
+				</center>
+
+			</form>
+		</div>
+
+		<div>
+			<h1 style="color:indianred;">h1h1h1h1</h1>		<!-- 行内样式 -->
+			<h2>h2h2h2h2</h2>
+			<h3>h3h3h3h3</h3>
+		</div>
+
+		<div>
+			<!-- 标签选择器 -->
+			<style>
+				h1 {
+					color: #696;
+				}
+			</style>
+			<h1>h1h1h1h1</h1>
+	
+			<!-- 类选择器 -->
+			<style>
+				.ch1 {
+					background-color: aqua;
+				}
+				.ch2 {
+					font-size: 15px;
+				}
+				.ch3 {
+					font-style: italic;
+				}
+			</style>
+			<!-- 类选择器可以使用多个样式，如果类选择器中的样式重复，依照就近原则进行样式显示 -->
+			<h1 class="ch1 ch2 ch3">h1h1h1h1h1</h1>
+			<h2 class="ch2">h2h2h2h2h2</h2>
+			<h3 class="ch3">h3h3h3h3h3</h3>
+	
+			<!-- ID选择器 -->
+			<style>
+				#box1 {
+					color: yellow;
+				}
+				#box2 {
+					color:red;
+				}
+				#box3 {
+					color:green;
+				}
+			</style>
+			<!-- 每个标签只可以选择一个ID选择器进行使用，下面的用法是错误的 -->
+			<!-- <div id="box1 box2">111111</div> -->
+			<!-- 虽然不同的标签可以使用相同的ID选择器，但是不建议这样使用。请遵循每个ID选择器是由一个标签进行使用的原则 -->
+			<div id="box1">111111</div>
+			<div id="box2">222222</div>
+			<div id="box3">333333</div>
+		</div>
+
+		<div>
+			<!-- 群组选择器 -->
+			<!-- 群组选择器，群组每个成员用,隔开，成员可以是标签、类选择器、ID选择器 -->
+			<style>
+				p,.divx, #h1x {
+					background-color: chartreuse;
+				}
+			</style>
+			<p>ppppppppppppppp</p>
+			<div class="divx" >divdivdivdivdiv</div>
+			<h1 id="h1x" >h1h1h1h1h1h1h1h1</h1>
+	
+			<!-- 后代选择器（包含选择器） -->
+			<!-- 后代选择器的意思是：标签下的儿子元素或孙子、重孙子...元素生效 -->
+			<!-- 例如：p h1 代表，只要是再p标签中的h1标签的属性都会生效 -->
+			<style>
+				p b {
+					background-color: red;
+				}
+				p b a {
+					color: black;
+				}
+			</style>
+			<p>
+				pppppppp
+				<b>
+					bbbbbbbb
+					<a href="https://www.baidu.com">百度一下</a>
+				</b>
+			</p>
+			<p>pppppppppppppppppppp</p>
+		</div>
+
+		<div>
+			<!-- 伪类选择器 -->
+			<!-- a标签的伪类有 a:link, a:visited, a:hover, a:active 这四个伪类顺序不可变，否则会导致样式失效 -->
+			<style>
+				a:link {
+					color: yellow;
+				}
+				a:visited {
+					color: red;
+				}
+				a:hover {
+					color: orange;
+				}
+				a:active {
+					color: green;
+				}
+			</style>
+			<a href="https://www.baidu.com">百度一下</a>
+			<br>
+			<a href="https://www.baidu.com/a">百度一下</a>
+		</div>
+		
+		<div>
+			<!-- 选择器的权重 -->
+			<!-- 总结起来就是，标签定义描述越具体，权重就会越高，就会优先显示该样式 -->
+				<style>
+					div {
+						background-color: #6969DD;
+					}
+					.divclass {
+						background-color: chartreuse;
+					}
+					#divid {
+						background-color: darkcyan;
+					}
+					div div {
+						background-color: darkkhaki;
+					}
+					div #divid span {
+						background-color: blue;
+					}
+					span {
+						background-color: purple!important;
+					}
+				</style>
+		
+				<div class="divclass" id="divid">ID选择器权重 > 类选择器权重 > 标签选择器权重</div>
+		
+				<div id="divid">11111
+					<span>包含选择器权重 = 选择器权重之和</span>
+				</div>
+				<div class="divclass" id="divid" style="background-color: brown;">内联样式选择器权重高于上述四种</div>
+				<span>!important修饰后权重变成最高的</span>
+		</div>
+
+	</span>
+
+</body>
+
+</html>
