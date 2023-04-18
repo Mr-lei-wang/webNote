@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">	<!-- 外部样式 -->
+	<!-- 外部样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<style>
 		/* @import url(css/index.css); */	/* 外部样式 */
 	</style>
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-	<span style="visibility: hidden; height: 0px">
+	<span>
 		<div>
 			<h1>一级标题</h1>
 			<h2>二级标题</h2>
@@ -66,7 +67,7 @@
 			<p>&copy;</p>
 			<p>&trade;</p>
 			<p>&reg;</p>
-			<p>&#128512</p>
+			<p>&#128512;</p>
 		</div>
 	
 		<div>
@@ -146,7 +147,7 @@
 					<td>2</td>
 				</tr>
 				<tr bgcolor="#232323" align="right" valign="bottom" height="100">
-					<td height="100">3</td>
+					<td height="100px">3</td>
 					<td align="right" valign="top" bgcolor="purple">4</td>
 				</tr>
 			</table>
@@ -297,7 +298,7 @@
 					color: orange;
 				}
 				a:active {
-					color: green;
+					color: black;
 				}
 			</style>
 			<a href="https://www.baidu.com">百度一下</a>
@@ -321,7 +322,7 @@
 					div div {
 						background-color: darkkhaki;
 					}
-					div #divid span {
+					div #divid em {
 						background-color: blue;
 					}
 					span {
@@ -332,7 +333,7 @@
 				<div class="divclass" id="divid">ID选择器权重 > 类选择器权重 > 标签选择器权重</div>
 		
 				<div id="divid">11111
-					<span>包含选择器权重 = 选择器权重之和</span>
+					<em>包含选择器权重 = 选择器权重之和</em>
 				</div>
 				<div class="divclass" id="divid" style="background-color: brown;">内联样式选择器权重高于上述四种</div>
 				<span>!important修饰后权重变成最高的</span>

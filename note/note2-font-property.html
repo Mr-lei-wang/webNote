@@ -65,6 +65,25 @@
 			word-spacing: 10px;	/* 设置词间距，只对英文单词有效 */
 			text-indent: 2em;
 		}
+		.divclass6 {
+			font-family: Consolas;
+			font-style: oblique;
+			font-weight: bolder;
+			color: #AAA;
+			text-indent: 2em;
+			letter-spacing: 2px;
+			word-spacing: 5px;
+			font-size: 15px;
+			width: 90%;
+			text-align: justify;
+			/* text-decaration 共有四个样式 overline line-through underline none */
+			/* text-decoration: overline; */
+			/* text-decoration: line-through; */
+			text-decoration: underline;
+			/* text-decoration: none; */
+			/* 可以再同一个属性中设置不同的样式，使用空格作为分隔，实际中用到的场景很少，此处作为笔记计入 */
+			text-decoration: overline line-through underline;
+		}
 	</style>
 </head>
 
@@ -94,7 +113,7 @@
 	<hr>
 
 	<div>
-		<ol>
+		<ol type="1" start="5">
 			<li>text-align</li>
 			<li>line-height</li>
 			<li>text-indent</li>
@@ -119,6 +138,18 @@
 			&emsp;就ask两地分居案例Lorem ipsum dolor sit垃圾地方立法骄傲了就爱看拉升阶段考虑开了房间奥克兰士大
 		</div>
 	</div>
+
+	<hr>
+
+	<div>
+		<ol type="1", start="9">
+			<li>text-decoration</li>
+		</ol>
+		<div class="divclass6">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid delectus, eos consequuntur sapiente numquam, iste consectetur quos quidem culpa mollitia repellendus deleniti expedita veritatis reiciendis. Commodi atque alias esse.
+		</div>
+	</div>
+
 </body>
 
 </html>
