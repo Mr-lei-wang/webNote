@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="../css/index.css">
+    <title>list-property</title>
+    <style>
+        .olclass1 {
+            font-family: Consolas;
+            font-weight: bolder;
+            font-style: oblique;
+            text-align: left;
+            color: blueviolet;
+            font-size: 18px;
+        }
+
+        .olclass1 li {
+            border: 1px solid red;
+        }
+
+        #liid1 {
+            list-style-type: square;
+            list-style-type: disc;
+            list-style-type: circle;
+            list-style-type: none;
+            list-style-image: url(../resource/1.png)
+        }
+
+        #liid2 {
+            list-style-type: none;
+            list-style-image: url(../resource/1.png);
+        }
+
+        #liid3 {
+            list-style-type: none;
+            list-style-image: url(../resource/1.png);
+            list-style-position: inside;   /* list 图标在li所在块的内部 */
+            list-style-position: outside;  /* list 图标在li所在块的外部[default] */
+        }
+
+        .olclass2 {
+            font: oblique lighter 18px/1em Consolas;
+            /* 与font这个综合属性不一样的是 list-style中的属性都是可以交换位置和省略其中的任意一个的 */
+            list-style: none url(../resource/1.png) inside;
+        }
+
+        .olclass2 li {
+            border: 1px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p class="classTitle">列表属性</p>
+        <ol type="1" start="1" class="olclass1">
+            <li id="liid1">list-style-type</li>
+            <li id="liid2">list-style-image</li>
+            <li id="liid3">list-style-position</li>
+        </ol>
+
+        <hr>
+        <ol class="olclass2">
+            <li>list-style-type</li>
+            <li>list-style-image</li>
+            <li>list-style-position</li>
+        </ol>
+    </div>
+</body>
+</html>
