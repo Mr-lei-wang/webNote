@@ -38,7 +38,7 @@
 			height: 50px;
 			width: 80%;
 			background-color: azure;
-			line-height: 50px;	/* 不建议用于多行文本 */
+			line-height: 50px;	/* 不建议用于多行文本 因为一旦设置了height后，块的高度确定，设置line-height会导致文本超出块的范围 */
 		}
 		.divclass3 {
 			font-size: 16px;
@@ -46,7 +46,7 @@
 			font-style: italic;
 			font-weight: bolder;
 			width: 80%;
-			text-indent: 2em;	/* em指的是一个字符的大小 */
+			text-indent: 2em;	/* em指的是一个字符的大小 同样适用于line-height */
 		}
 		.divclass4 {
 			font-family: consolas;
@@ -83,6 +83,24 @@
 			/* text-decoration: none; */
 			/* 可以再同一个属性中设置不同的样式，使用空格作为分隔，实际中用到的场景很少，此处作为笔记计入 */
 			text-decoration: overline line-through underline;
+		}
+		.divclass7 {
+			/* font 属性是 font-style font-weight font-size/line-height font-family 的组合 */
+			/* 上面的属性顺序不可变，font-style, font-weight 可以省略 font-family不可以省略 font-size 或 line-height 可以省略一个 */
+			/* 如果不按照规则进行书写，font中所有的属性都无法生效 */
+			font: oblique bolder 14px/1em Consolas;
+			text-align: justify;
+			color: #14c145;
+			background-color: white;
+			padding: 10px;
+			/* text-transform: captialize	英文首字母大写 */
+			/* text-transform: lowercase	所有字母小写 */
+			/* text-transform: uppercase	所有字母大写 */
+			/* text-transform: none			无效果 */
+			text-transform: capitalize;
+			text-transform: lowercase;
+			text-transform: uppercase;
+			text-transform: none;
 		}
 	</style>
 </head>
@@ -147,6 +165,18 @@
 		</ol>
 		<div class="divclass6">
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid delectus, eos consequuntur sapiente numquam, iste consectetur quos quidem culpa mollitia repellendus deleniti expedita veritatis reiciendis. Commodi atque alias esse.
+		</div>
+	</div>
+
+	<hr>
+
+	<div>
+		<ol type="1" start="10">
+			<li>text-transform</li>
+		</ol>
+
+		<div class="divclass7">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore aspernatur pariatur quos. Ullam ea culpa ut optio amet. Odio officiis ratione aut cupiditate magnam reiciendis. Modi ipsum recusandae quod?
 		</div>
 	</div>
 
