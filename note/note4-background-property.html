@@ -22,12 +22,12 @@
 
         .divclass1 {
             width: 80%;
-            height: 600px;
+            height: 300px;
             /* background-color: yellow; */
             /* rgba: red green blue alpha-[0,1]透明度 */
             background-color: rgba(233, 13, 149, 0.5);
             /* 设置背景图片 */
-            background-image: url(../resource/1.png);
+            background-image: url(../resource/image0.jpg);
             /* 设置背景图片的平铺属性
                 repeat：平铺 [default]
                 no-repeat: 不平铺
@@ -35,13 +35,21 @@
                 repeat-y：垂直方向平铺 */
             background-repeat: repeat-x;
             /* 设置背景图片的位置 
-               有如下属性：
+               有如下设置方法：
                1.50px 100px 将背景图片在水平方向偏移50px，垂直方向偏移100px 正负数即可 
                2.20% 50% 将背景图片在水平方向偏移元素宽度的20%，垂直方向偏移元素高度的50% 可以超过100%或者小于0，但会超出元素所在区域，一部份区域无法显示 
                3.水平方向： left center right
                  垂直方向： top  center bottom */
             /* background-position: 20% 50%; */
             background-position: center center;
+            /* 设置背景图片的大小
+               有如下设置方法:
+               1.50px 100px 将背景图片的宽度缩放到50px，将背景图片的高度缩放到100px 负数不生效
+               2.50% 50%    将背景图片的宽度缩放到元素宽度的50%，将背景图片的高度缩放到元素高度的100% 负数不生效
+               3.cover      将背景图片扩展至可以覆盖所在元素，保留宽高比，图片可能无法全部显示
+               4.contain    将背景图片缩放至可以全部显示在所在元素的最大size，保证背景图片可以全部显示在元素内，保留宽高比，但是元素背景可能无法被图片全部覆盖，产生留白
+             */
+            background-size: contain;
         }
     </style>
 </head>
@@ -54,6 +62,7 @@
             <li>background-image</li>
             <li>background-repeat</li>
             <li>background-position</li>
+            <li>background-size</li>
         </ol>
         <hr>
         <div class="divclass1"></div>
