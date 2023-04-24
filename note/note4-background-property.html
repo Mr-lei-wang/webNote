@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>background-property</title>
+    <style>
+        ol {
+          list-style-type: none; 
+          list-style-image: url(../resource/1.png);
+          text-decoration: underline;
+          text-decoration-color: red;
+          font-size: 19px;
+          font-family: Consolas;
+          letter-spacing: 0px;
+          word-spacing: 1px;
+          text-transform: capitalize;
+        }
+
+        .divclass1 {
+            width: 80%;
+            height: 600px;
+            /* background-color: yellow; */
+            /* rgba: red green blue alpha-[0,1]透明度 */
+            background-color: rgba(233, 13, 149, 0.5);
+            /* 设置背景图片 */
+            background-image: url(../resource/1.png);
+            /* 设置背景图片的平铺属性
+                repeat：平铺 [default]
+                no-repeat: 不平铺
+                repeat-x：水平方向平铺
+                repeat-y：垂直方向平铺 */
+            background-repeat: repeat-x;
+            /* 设置背景图片的位置 
+               有如下属性：
+               1.50px 100px 将背景图片在水平方向偏移50px，垂直方向偏移100px 正负数即可 
+               2.20% 50% 将背景图片在水平方向偏移元素宽度的20%，垂直方向偏移元素高度的50% 可以超过100%或者小于0，但会超出元素所在区域，一部份区域无法显示 
+               3.水平方向： left center right
+                 垂直方向： top  center bottom */
+            /* background-position: 20% 50%; */
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p class="classTitle">背景属性</p>
+        <ol>
+            <li>background-color</li>
+            <li>background-image</li>
+            <li>background-repeat</li>
+            <li>background-position</li>
+        </ol>
+        <hr>
+        <div class="divclass1"></div>
+    </div> 
+</body>
+
+</html>
