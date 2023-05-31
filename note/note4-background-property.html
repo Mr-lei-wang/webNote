@@ -51,6 +51,36 @@
              */
             background-size: contain;
         }
+
+        .divclass2 {
+            height: 1000px;
+            width: 300px;
+            border: red solid 1px;
+            background-image: url(../resource/image0.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 800px;
+            /* 设置背景图片的固定(fixed)与滚动(scroll[default])属性 
+               scroll:设置背景图片随着所在元素的滚动而滚动
+               fixed:设置背景图片固定在浏览器窗口的左上角(即使设置background-position属性也无法改变背景图片的位置)。
+                    背景图片会一直在浏览器窗口的左上角显示，当背景图片所在元素不在背景图片所示位置，那么背景图片将无法显示。
+                    例如：背景图片所在元素的位置在浏览器窗口的中心区域，background-attachment属性设置为fixed(背景图片显示在浏览器窗口的左上角)，
+                         此时背景图片所在元素和背景图片没有重合，那么背景图片显示在所在元素区域以外，因此，背景图片无法显示。
+                         如果有重合的部分，那么只显示背景图片和所在元素重合的部分。
+            */
+            /* background-position: 25px 25px; */
+            background-attachment: fixed;
+            /* margin: 0 auto; */
+        }
+
+        .divclass3 {
+            height: 1000px;
+            width: 300px;
+            border: yellow solid 1px;
+            background-image: url(../resource/image0.jpg);
+            background-repeat: no-repeat;
+            background-size: 300px 800px;
+            background-attachment: fixed;
+        }
     </style>
 </head>
 
@@ -63,9 +93,13 @@
             <li>background-repeat</li>
             <li>background-position</li>
             <li>background-size</li>
+            <li>background-attachment</li>
         </ol>
         <hr>
         <div class="divclass1"></div>
+        <!-- 下面两个div随着上下滑动，呈现出视差的效果 -->
+        <div class="divclass2"></div>
+        <div class="divclass3"></div>
     </div> 
 </body>
 
