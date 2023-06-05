@@ -81,6 +81,18 @@
             background-size: 300px 800px;
             background-attachment: fixed;
         }
+
+        .divclass4 {
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            /* 书写background复合属性时，background-position的两个方向（水平、垂直）不要分开[下面的书写方式是正确的] 
+               background中的复合属性如果哪一项属性没有书写，表明该属性会被修改成默认值[如果background复合属性之前有background相关属性，该属性会被改为默认值]
+               关于background中的复合属性都包含哪几项属性，bilibili上的课程与MDN中说法不一致
+            */
+            background: rgba(0, 0, 255, 0.3) url(../resource/image1.jpg) center bottom no-repeat fixed;
+            background-size: contain;
+        }
     </style>
 </head>
 
@@ -94,12 +106,14 @@
             <li>background-position</li>
             <li>background-size</li>
             <li>background-attachment</li>
+            <li>background</li>
         </ol>
         <hr>
         <div class="divclass1"></div>
         <!-- 下面两个div随着上下滑动，呈现出视差的效果 -->
         <div class="divclass2"></div>
         <div class="divclass3"></div>
+        <div class="divclass4"></div>
     </div> 
 </body>
 
