@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Float</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+        }
+
+        .divclass1 {
+            width: 100%;
+            height: 100%;
+            border: white 1px solid;
+        }
+
+        .divclass2 {
+            margin-top: 120px;
+            width: 100%;
+            height: 100%;
+            border: silver 4px solid;
+        }
+
+        .divclass3 {
+            margin-top: 120px;
+            width: 100%;
+            height: 100px;
+            border: yellow 3px solid;
+        }
+
+        .divclass4 {
+            margin-top: 20px;
+            width: 100%;
+            height: 200px;
+            border: sandybrown 3px solid;
+        }
+
+        .subdivclass1 {
+            background-color: azure;
+            margin-left: 10px;
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        .subdivclass2 {
+            background-color: blueviolet;
+            margin-left: 10px;
+            float: right;
+            width: 100px;
+            height: 100px;
+        }
+
+        /*  float: [right | left | none(default)] 
+            设置元素浮动属性。
+            浮动属性会改变行级元素（这个说法是自己的理解，不一定准确——指那些会独占一行的元素）独占一行的行为
+        */
+        #divid1 {
+            background-color: red;
+            float: left;
+        }
+
+        #divid2 {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            float: none;
+        }
+
+        #divid3 {
+            background-color: blue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <p>总结如下图：</p>
+    <img src="../resource/Float_Property_Summary.png" alt="Float_Property_Summary">
+    <div class="divclass1" style="margin-top: 50px;">
+        <div id="divid1"></div>
+        <div id="divid2"></div>
+        <div id="divid3"></div>
+    </div>
+
+    <!-- float属性不会对文字进行遮挡，即使下面的divid2已经全部被遮挡，文字也不会被遮挡 -->
+    <div class="divclass2">
+        <div id="divid1"></div>
+        <div id="divid2" style="width: 100px; height: 100px;">Lorem ipsum, dolor sit amet consectetur</div>
+        <div id="divid3"></div>
+    </div>
+
+    <!-- 但是，float属性会对标签进行遮挡，下面的p标签已经完全被遮挡 -->
+    <div class="divclass2">
+        <div id="divid1"></div>
+        <div id="divid2" style="width: 100px; height: 100px;">
+            <p style="background-color: aqua; height: 100px; margin: 0px;"></p>
+        </div>
+        <div id="divid3"></div>
+    </div>
+
+    <div class="divclass3">
+        <div class="subdivclass1"></div>
+        <div class="subdivclass1"></div>
+        <div class="subdivclass1"></div>
+    </div>
+
+    <div class="divclass3">
+        <div class="subdivclass2"></div>
+        <div class="subdivclass2"></div>
+        <div class="subdivclass2"></div>
+    </div>
+
+    <div class="divclass4">
+        <div class="subdivclass1" style="height: 300px;"></div>
+        <div class="subdivclass1" style="width: 80%; background-color: aqua;"></div>
+        <div class="subdivclass1" style="background-color: bisque;"></div>
+    </div>
+</body>
+</html>
