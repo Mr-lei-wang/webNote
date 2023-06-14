@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Box Model</title>
+    <style>
+        img {
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        ul {
+            list-style-type: none;
+            list-style-image: url(../resource/1.png);
+            list-style-position: outside;
+        }
+
+        ul li {
+            border: gold 1px solid;
+            padding: 0px 10px 0px;
+            line-height: 2em;
+        }
+
+        div {
+            height: 150px;
+            width: 500px;
+            color: black;
+            font-family: Consolas;
+            text-align: justify;
+            background-color: aqua;
+            /*  内边距-padding 
+                padding设置一个值：上 下 左 右
+                padding设置两个值：上下 左右
+                padding设置三个值：上 左右 下
+                padding设置四个值：上 右 下 左
+                *注意：背景色会填充padding所在的区域;
+                       padding也会令内容所占区域增大
+                       padding设置负数会失效
+                padding也可以单独设置四个方向:  padding-top padding-right padding-bottom padding-left
+            */
+            padding: 20px;
+            padding: 20px 30px;
+            padding: 20px 30px 40px;
+            padding: 20px 30px 40px 50px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../resource/padding.png" title="盒子模型示意图">
+    <ul>
+        <li>padding(内边距)</li>
+    </ul>
+    <hr color="gold">
+
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis cum, molestiae necessitatibus, delectus nostrum laborum suscipit tempore aspernatur aperiam qui adipisci voluptas porro, temporibus vitae molestias quo libero quod!
+    </div>
+</body>
+</html>
