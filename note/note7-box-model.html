@@ -23,7 +23,7 @@
             line-height: 2em;
         }
 
-        div {
+        #divid1 {
             height: 150px;
             width: 500px;
             color: black;
@@ -45,17 +45,61 @@
             padding: 20px 30px 40px;
             padding: 20px 30px 40px 50px;
         }
+
+        #divid2 {
+            width: 100px;
+            height: 100px;
+            background-color: #75bd22;
+            /*  边框-border 
+                - 综合属性（常用）:
+                    border: 10px(边框宽度) solid(边框样式[solid-实线 | dashed-虚线 | double-双实线 | dotted-点状线]) red(边框颜色)
+                - 单个属性（不常用）:
+                    border-width(边框宽度):
+                        与内边距-padding一样，可以设置[1-4]个值
+                        设置一个值：上、下、左、右;
+                        设置两个值：上下、左右;
+                        设置三个值：上、左右、下;
+                        设置四个值：上、右、下、左。
+                    border-style(边框样式):
+                        solid(实线)
+                        dashed(虚线)
+                        double(双实线)
+                        dotted(点状线)
+                    border-color(边框颜色):
+                *注意： 缺省border-style 无法显示边框、使得元素缺失边框的size，内容所占区域不受border的影响
+                        border也会令内容所占区域增大
+            */
+            border: 10px solid white;
+
+            border-width: 10px;
+            border-width: 10px 20px;
+            border-width: 10px 20px 30px;
+            border-width: 10px 20px 30px 40px;
+
+            border-style: solid;
+            border-style: dashed;
+            border-style: double;
+            border-style: dotted;
+
+            border-color: red;
+
+        }
     </style>
 </head>
 <body>
     <img src="../resource/padding.png" title="盒子模型示意图">
     <ul>
         <li>padding(内边距)</li>
+        <li>border(边框)</li>
     </ul>
     <hr color="gold">
 
-    <div>
+    <div id="divid1">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis cum, molestiae necessitatibus, delectus nostrum laborum suscipit tempore aspernatur aperiam qui adipisci voluptas porro, temporibus vitae molestias quo libero quod!
+    </div>
+
+    <div id="divid2">
+
     </div>
 </body>
 </html>
