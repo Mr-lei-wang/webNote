@@ -84,6 +84,32 @@
             border-color: red;
 
         }
+
+        #divid3 {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+
+            /*  外边距-margin：
+                margin属性设置一个值：上、下、左、右；
+                margin属性设置两个值：上下、左右；
+                margin属性设置三个值：上、左右、下；
+                margin属性设置四个值：上、右、下、左；
+
+                *注意： margin不会填充内容所占的区域；
+                        margin属性可是设置负数；
+                        margin也有四个方向的属性
+                        - margin-top
+                        - margin -bottom
+                        - margin-left
+                        - margin-right
+                        利用margin属性设置水平居中的方案：（利用auto将元素在水平方向居中）
+                        - margin: 0 auto; (常用) 0代表元素margin-top/margin-bottom = 0, auto代表margin-left/margin-right在水平方向上平分元素外面的距离。
+                        - margin: 0 auto 0; 第一个0代表元素margin-top = 0, auto代表margin-left/margin-right在水平方向上平分元素外面的距离，第二个0代表margin-bottom = 0
+            */
+            margin: 10px;
+            margin: 100px auto 10px;
+        }
     </style>
 </head>
 <body>
@@ -98,8 +124,8 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus reiciendis cum, molestiae necessitatibus, delectus nostrum laborum suscipit tempore aspernatur aperiam qui adipisci voluptas porro, temporibus vitae molestias quo libero quod!
     </div>
 
-    <div id="divid2">
+    <div id="divid2"></div>
 
-    </div>
+    <div id="divid3"></div>
 </body>
 </html>
